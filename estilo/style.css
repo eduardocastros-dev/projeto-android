@@ -71,7 +71,7 @@ nav{
     
 }
 
-.link-rodape{
+#link-rodape{
     text-decoration: none;
     color: white;
     padding: 5px;
@@ -80,7 +80,18 @@ nav{
     position: relative;
 }
 
-.link-rodape::after{
+/* O código abaixo é o mesmo que o de cima só mudei da class pra id */
+
+/* .link{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    font-weight: 600;
+    position: relative;
+} */
+
+.link::after{
     content: ' ';
     height: 2px;
     width: 0%;
@@ -89,16 +100,16 @@ nav{
     bottom: 0;
     left: 0;
 
-    background: linear-gradient(90deg, var(--cor1), var(--cor2));
+    background: linear-gradient(90deg, var(--cor2), var(--cor4));
     
     transition: width 0.5s ease;
 }
 
-.link-rodape:hover::after{
+.link:hover::after{
     width: 100%;
 }
 
-.link{
+.navegacao{
     text-decoration: none;
     padding: 10px;
     margin-right: 10px;
@@ -107,7 +118,7 @@ nav{
     transition-duration: 0.35s;
 }
 
-.link:hover{
+.navegacao:hover{
     color: var(--cor2);
 }
 
@@ -161,7 +172,9 @@ main strong{
     font-weight: bold;
 }
 
+/* Estilo dos links que estão no main (irina block...) */
 main a{
+    position: relative;
     color: var(--cor4);
     text-decoration: none;
     background-color: var(--cor1);
@@ -170,10 +183,10 @@ main a{
     transition-duration: 0.35s;
 }
 
-main a:hover{
+/* main a:hover{
     text-decoration: underline;
     color: var(--cor2);
-}
+} */
 
 div.video{
     background-color: var(--cor4);
@@ -206,9 +219,11 @@ aside > h3{
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Estilo do link que está no "Quer aprender mais?" */
 aside a{
-    color: var(--cor1);
-    background-color: #3aa757;
+    position: relative;
+    color: white;
+    background-color: var(--cor3);
 }
 
 aside > ul{
