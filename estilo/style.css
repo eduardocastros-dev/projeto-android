@@ -22,6 +22,7 @@
 
 }
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -63,18 +64,35 @@ header > p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.644);
 }
 
+span{
+    background-color: var(--cor4);
+    padding: 10px;
+}
+
+span#item-menu{
+    color: var(--cor1);
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
 nav{
+    display: none;
     background-color: var(--cor4);
     text-align: left;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.301);
     padding: 10px;
-    
+}
+
+/* Configuração para deixar os itens um em baixo do outro */
+nav > a {
+    display: block;
 }
 
 nav > .navegacao{
     text-decoration: none;
     padding: 10px;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     color: white;
     font-weight: bold;
     transition-duration: 0.35s;
@@ -132,10 +150,6 @@ nav > .navegacao:hover{
     width: 100%;
 }
 
-
-
-
-
 main{
     background-color: var(--cor0);
     padding: 20px;
@@ -147,7 +161,6 @@ main{
     min-width: 300px;
     max-width: 1000px;
 }
-
 
 img{
     width: 100%;
@@ -202,8 +215,8 @@ main a{
     } */
     
     div.video{
-        background-color: var(--cor4);
-        padding: 20px;
+    background-color: var(--cor4);
+    padding: 20px;
     margin: 0px -20px 20px -20px;
     padding-bottom: 56.90%;
     position: relative; 
