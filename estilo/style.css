@@ -54,7 +54,7 @@ header > h1{
 
 header > p{
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     max-width: 700px;
     margin: auto;
     padding-right: 10px;
@@ -71,13 +71,17 @@ nav{
     
 }
 
-#link-rodape{
+nav > .navegacao{
     text-decoration: none;
+    padding: 10px;
+    /* margin-right: 10px; */
     color: white;
-    padding: 5px;
-    margin: 0px;
-    font-weight: 600;
-    position: relative;
+    font-weight: bold;
+    transition-duration: 0.35s;
+}
+
+nav > .navegacao:hover{
+    color: var(--cor2);
 }
 
 /* O código abaixo é o mesmo que o de cima só mudei da class pra id */
@@ -89,17 +93,17 @@ nav{
     margin: 0px;
     font-weight: 600;
     position: relative;
-} */
-
-.link::after{
-    content: ' ';
-    height: 2px;
-    width: 0%;
-    position: absolute;
-
-    bottom: 0;
-    left: 0;
-
+    } */
+    
+    .link::after{
+        content: ' ';
+        height: 2px;
+        width: 0%;
+        position: absolute;
+        
+        bottom: 0;
+        left: 0;
+        
     background: linear-gradient(90deg, var(--cor1), var(--cor2));
     
     transition: width 0.5s ease;
@@ -115,10 +119,10 @@ nav{
     height: 2px;
     width: 0%;
     position: absolute;
-
+    
     bottom: 0;
     left: 0;
-
+    
     background: linear-gradient(90deg, var(--cor2), var(--cor4));
     
     transition: width 0.5s ease;
@@ -129,18 +133,7 @@ nav{
 }
 
 
-.navegacao{
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
-    color: white;
-    font-weight: bold;
-    transition-duration: 0.35s;
-}
 
-.navegacao:hover{
-    color: var(--cor2);
-}
 
 
 main{
@@ -177,7 +170,7 @@ main article > h2{
     color: var(--cor3);
     font-size: 1.3em;
     font-weight: normal;
-
+    
 }
 
 main p{
@@ -206,11 +199,11 @@ main a{
 /* main a:hover{
     text-decoration: underline;
     color: var(--cor2);
-} */
-
-div.video{
-    background-color: var(--cor4);
-    padding: 20px;
+    } */
+    
+    div.video{
+        background-color: var(--cor4);
+        padding: 20px;
     margin: 0px -20px 20px -20px;
     padding-bottom: 56.90%;
     position: relative; 
@@ -257,4 +250,13 @@ footer{
     text-align: center;
     font-size: 0,5em;
     padding: 10px;
+}
+
+#link-rodape{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    font-weight: 600;
+    position: relative;
 }
